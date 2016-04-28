@@ -15,7 +15,7 @@
 3) Abra no Windows o prompt de comando (Digitando "cmd" no buscador do windows) 
    de preferencia como admin (depois de pesquisar basta clicar com botão direito e clicar em executar como administrador).
 
-4) No prompt de comando vá entrando nas pastas até entrar na pasta do seu projeto.
+4) No prompt de comando vá entrando nas pastas até entrar na pasta do seu projeto.<br>
 	No prompt de comando(cmd):
 	Para entrar em pastas basta digitar:  
 	
