@@ -3,7 +3,7 @@
 
 1) Baixe os arquivos do projeto no Repositório do GitHub.
 
-2) Importe o projeto no seu computador com ele devidamente configurado e rodando com ruby and rails: Estou Utilizando: 
+2) Importe o projeto no seu computador com ele devidamente configurado e rodando o ruby and rails estou Utilizando: 
 	Versão do Ruby 2.1.8
 	Versão do Rails 4.2.6
 	Versão da Gem 2.6.3
