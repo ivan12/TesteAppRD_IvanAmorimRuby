@@ -39,47 +39,51 @@
 
 7) Tela Principal:
 
-	O programa irá abrir em uma tela inicial com Menu:
+	O programa irá abrir uma tela inicial com o Menu:
 	
-	Inicio | Lista de Usuarios RD | Cadastrar Novo Usuário RD | Logar :
+	Inicio | Lista de Usuarios RD | Cadastrar Novo Usuário RD | Logar
 
-	Inicio) Volta para esta tela de inicio.
+	Inicio: Volta para esta tela de inicio.
 	
-	Lista de Usuarios RD) Lista os usuariosRD cadastrados podendo ver todos cadastrados, podendo editar, deletar.
+	Lista de Usuarios RD: Lista os usuariosRD cadastrados podendo ver todos cadastrados, podendo editar, deletar.
 
-	Cadastrar Novo Usuário RD) Cadastra um novo usuarioRD.
+	Cadastrar Novo Usuário RD: Cadastra um novo usuarioRD.
 	
-	Logar) Loga no sistema, se o seu usuarioRD já estiver cadastrado.
+	Logar: Loga no sistema, se o seu usuarioRD já estiver cadastrado.
 	
 8) Tela de Principal (Logado):
 
-	O programa irá abrir em uma tela inicial com Menu:
+	O programa irá abrir em uma tela inicial com o Menu:
 	
-	Inicio | Lista de Usuarios RD | Cadastrar Novo Usuário RD | Logar :
+	Inicio | Lista de Usuarios RD | Clientes de amorim-ivan@hotmail.com | Cadastrar Novo Usuário RD | amorim-ivan@hotmail.com | Sair 
 
-	Inicio) Volta para esta tela de inicio.
+	Inicio: Volta para esta tela de inicio.
 	
-	Lista de Usuarios RD) Lista os usuariosRD cadastrados podendo ver todos cadastrados, podendo editar, deletar.
-
-	Cadastrar Novo Usuário RD) Cadastra um novo usuarioRD.
+	Lista de Usuarios RD: Lista os usuariosRD cadastrados podendo ver todos cadastrados, podendo editar, deletar.
 	
-	Logar) Loga no sistema, se o seu usuarioRD já estiver cadastrado.
+	Clientes de amorim-ivan@hotmail.com: Lista todos os clientes cadastrados do usuário logado podendo ver todos, editar, deletar.
+	
+	Cadastrar Novo Usuário RD: Cadastra um novo usuarioRD.
+	
+	amorim-ivan@hotmail.com: Ao clicar em cima do email do usuário cadastrado mostra-se todos os dados dele.
+	
+	Sair: Sai da área do usuário no sistema e volta para para a página principal.
 	
 
 9) Tela de Login/cadastro:
 
 	O programa irá abrir em uma tela com dois EditText e um botão:
 
-	EditText-1) Colocar o email do usuario caso já tenha no banco ele emite um alerta email já existente.
+	EditText-1) Colocar o email do usuário, caso já tenha no banco ele emite um alerta email já existente.
 	
-	EditText-2) Colocar a senha do usuario, salva criptografado no banco de dados.
+	EditText-2) Colocar a senha do usuário, salva criptografado no banco de dados.
 
-	Button-1) Clicando no Botao registrar salva o usuario no banco e já loga.
+	Button-1) Clicando no Botão registrar, salva o usuário no banco e já loga.
 	
 	
-10) Tela de Exibição dos dados
+10) Telas de Exibição dos dados
 
-	Ao clicar em show irá aparecer os dados do usuario em questão assim como.
+	Ao clicar nos botões "show" irá aparecer os dados do usuário selecionado assim como:
 
 	Nome e Email
 	
@@ -87,22 +91,22 @@
 
 	Aparecerá 3 EditText e um botão:
 	
-	EditText-1) Colocar o nome do usuario que será cadastrado.
+	EditText-1) Colocar o nome do usuário que será cadastrado.
 	
-	EditText-2) Colocar o email do usuario que será cadastrado.
+	EditText-2) Colocar o email do usuário que será cadastrado.
 
-	EditText-3) Colocar senha nova.
+	EditText-3) Colocar senha / se for na area de cliente será telefone.
 	
-	Button-2) Clicando no Botao Register ele irá salvar o nome do usuario digitado juntamente com a sua senha (também ira criar um id).
+	Button-2) Clicando no Botao Register ele irá salvar os dados preenchidos e também ira criar um id no banco.
 	
 12) Validações e MSGs:
 	
-	Validação/MSGs-1) Ao entrar com usuario ou senha errados ou nao cadastrados no banco aparecerá a seguinte mensagem ("Invalid email or password.!").
+	Validação/MSGs-1) Ao entrar com usuário ou senha errados ou nao cadastrados no banco aparecerá a seguinte mensagem ("Invalid email or password.!").
 	
-	Validação/MSGs-3) Ao clicar em register em uma tela de cadastro e se for salvo com sucesso aparecerá a seguinte mensagem ("Usuario criado com sucesso!!").
+	Validação/MSGs-3) Ao clicar em register em uma tela de cadastro e se for salvo com sucesso aparecerá a seguinte mensagem ("Usuário criado com sucesso!!").
 
-	Validação/MSGs-4) Ao clicar em editar em uma tela de cadastro e se for salvo com sucesso aparecerá a seguinte mensagem ("Usuario atualizado com sucesso!!").
+	Validação/MSGs-4) Ao clicar em editar em uma tela de cadastro e se for salvo com sucesso aparecerá a seguinte mensagem ("Usuário atualizado com sucesso!!").
 
-	Validação/MSGs-5) Ao clicar em deletar em uma tela de cadastro e se for salvo com sucesso aparecerá a seguinte mensagem ("Usuario excluido com sucesso!!").	
+	Validação/MSGs-5) Ao clicar em deletar em uma tela de cadastro e se for salvo com sucesso aparecerá a seguinte mensagem ("Usuário excluido com sucesso!!").	
 .
 
