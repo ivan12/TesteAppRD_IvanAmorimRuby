@@ -15,8 +15,6 @@
 <% if usuario_signed_in? %>
 
 	<%= link_to 'Clientes de '+current_usuario.email, clientes_path %>
-                                                 
-	<%= link_to 'Cadastrar Novo Usuário RD', new_usuario_registration_path %>
 	
 	<%= link_to current_usuario.email, edit_usuario_registration_path %>
 	
