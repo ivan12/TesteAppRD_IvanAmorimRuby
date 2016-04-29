@@ -33,13 +33,13 @@ tem uma listagem dos seus clientes cadastrados, podendo também adcionar novos, 
 	<< (Dica) >> 
 	<< Voce pode ir diretamente na pasta e clicar com botão direito do mouse segurando shift e clicar em abrir janela de comando aqui >>
 	
-5) Quando chegar dentro da pasta raiz do projeto cujo nome é TesteAppRD_IvanAmorim basta digitar: 
+5) Quando chegar dentro da pasta raiz do projeto cujo nome é TesteAppRD_IvanAmorim digite comando abaixo. 
 	
 	<b>rails s</b>   
 	
 	Assim irá rodar o servidor do rails na sua maquina
 	
-6)  Com o servidor local rodando na sua maquina basta digitar na url do seu navegador:
+6)  Com o servidor local rodando na sua maquina basta digitar na url do seu navegador.
 
 	<b>http://localhost:3000/</b>
 
