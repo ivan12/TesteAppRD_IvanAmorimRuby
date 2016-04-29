@@ -1,9 +1,14 @@
 class UsuariosController < ApplicationController
   before_action :set_usuario, only: [:show, :edit, :update, :destroy]
+  before_action :carregaClientes
   
+  def carregaClientes
+	@clientes = Cliente.all
+  end
   
   def index
     @usuarios = Usuario.all
+	@emailOld = ""
   end
   
   # GET /usuarios/1
@@ -40,7 +45,13 @@ class UsuariosController < ApplicationController
   # PATCH/PUT /usuarios/1.json
   def update
     respond_to do |format|
+	  @emailOld = @usuario.email
       if @usuario.update(usuario_params)
+	   @clientes.each do |clientesTamp|
+			if clientesTamp.emailUsuario == @emailOld
+				clientesTamp.update_column(:emailUsuario, @usuario.email);
+			end
+	  end
         format.html { redirect_to @usuario, notice: 'Usuario atualizado com sucesso.'}
         format.json { render :show, status: :ok, location: @usuario }
       else
