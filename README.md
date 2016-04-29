@@ -1,10 +1,10 @@
 
 #TesteAppRD - Campos Personalizados Ruby on Rails Ivan Amorim
 
-Resumo do sistema: 
+<b>Resumo do sistema:</b><br> 
 O Sistema inicialmente lista, edita, deleta e cadastra usuários, com um já devidamente cadastrado você pode logar no sistema, dentro do sistema 
 tem uma listagem dos seus clientes cadastrados, podendo também adcionar novos, edita-los e excluí-los se for o caso. 
-OBS: Clientes ainda estão com campos de cadastro fixos (não personalizados).
+<b>OBS:</b> Clientes ainda estão com campos de cadastro fixos (não personalizados).
 
 1) Baixe os arquivos do projeto no Repositório do GitHub.
 
