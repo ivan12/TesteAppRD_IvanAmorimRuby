@@ -7,42 +7,41 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
 <h2>.::Menu::.</h2>
-<td><%= link_to 'Inicio', welcome_index_path %></td> |
+<%= link_to 'Inicio', welcome_index_path%>
 
-<td><%= link_to 'Lista de Usuarios RD', usuarios_path %></td>  |
+<%= link_to 'Lista de Usuarios RD', usuarios_path %>
 
 <% if usuario_signed_in? %>
 
-	<td><%= link_to 'Clientes de '+current_usuario.email, clientes_path %></td>  |
+	<%= link_to 'Clientes de '+current_usuario.email, clientes_path %>
                                                  
-	<td><%= link_to 'Cadastrar Novo Usuário RD', new_usuario_registration_path %></td>  |
+	<%= link_to 'Cadastrar Novo Usuário RD', new_usuario_registration_path %>
 	
-	<td><%= link_to current_usuario.email, edit_usuario_registration_path %></td>  |
+	<%= link_to current_usuario.email, edit_usuario_registration_path %>
 	
-	<td><%= link_to 'Sair', destroy_usuario_session_path, method: :delete %></td>
+	<%= link_to 'Sair', destroy_usuario_session_path, method: :delete %>
 
 <% else %>
 
-	<td><%= link_to 'Cadastrar Novo Usuário RD', new_usuario_registration_path %></td>  |
+	<%= link_to 'Cadastrar Novo Usuário RD', new_usuario_registration_path %>
 
-	<td><%= link_to 'Logar', new_usuario_session_path %></td>
+	<%= link_to 'Logar', new_usuario_session_path %>
 
 <% end %>
 
 <br><br>
- <p class="notice"><%= notice %></p>
- <p class="alert"><%= alert %></p>
+ <p class="notice">
+	<%= notice %>
+ </p>
+ <p class="alert">
+	<%= alert %></p>
 <br>
-
+ <fieldset>
+    <legend></legend>
 <%= yield %>
+<br><br>
+</fieldset>
 
 </body>
 </html>
-
-
-
-
-
-

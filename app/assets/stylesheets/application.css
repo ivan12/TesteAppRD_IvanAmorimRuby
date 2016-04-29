@@ -16,8 +16,58 @@
  
  table{
 	 width:68%;
+	 border-spacing: 28px;
  }
  
  th {
 	 text-align: left;
  }
+ 
+a:visited {
+  color: transparent;
+}
+/* line 28, C:/Users/ivan/Desktop/teste RubyRails/TesteAppRD_IvanAmorim/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: transparent;
+  background-color: transparent;
+}
+ 
+ a{
+	 color: #FFF !important;
+ }
+ 
+ a:link{
+	height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgba(0,0,0,.3) 0px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+    background: #90c843;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 9pt;
+    transition: background .4s;
+    cursor: pointer;
+ }
+ 
+  a:link :focus{
+	  outline: none
+	  
+  }
+  
+  a:link{
+	  text-decoration:none; 
+  }
+ 
+ 
+   a :hover{
+	  outline: none
+	  
+  }
+ 
+ 
+ 
+ 
+ 
