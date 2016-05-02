@@ -1,118 +1,118 @@
 
-#TesteAppRD - Campos Personalizados Ruby on Rails Ivan Amorim
+#TestAppRD - Custom fields Ruby on Rails Ivan Amorim
 
-<b>Resumo do sistema:</b><br> 
-O Sistema inicialmente lista, edita, deleta e cadastra usuários, com um já devidamente cadastrado você pode logar no sistema, dentro do sistema 
-tem uma listagem dos seus clientes cadastrados, podendo também adcionar novos, edita-los e excluí-los se for o caso.<br> 
-<b>OBS:</b> Clientes ainda estão com campos de cadastro fixos (não personalizados).
+<b>System Overview:</b><br> 
+The first system, list, edit, delete and registers users, with an already properly registered you can log into the system, within the system
+It has a list of its registered customers and can also later add new, edit them and delete them if necessary.<br> 
+<b>Note:</b> Customers are still fixed registration fields (not custom).
 
-1) Baixe os arquivos do projeto no Repositório do GitHub.
+1) Download the project files in the repository GitHub.
 
-2) Importe o projeto no seu computador com ele devidamente configurado e rodando o ruby and rails estou Utilizando: 
-	Versão do Ruby 2.1.8
-	Versão do Rails 4.2.6
-	Versão da Gem 2.6.3
+2) Import the project on your computer with it properly configured and running ruby and rails,I'm using: 
+	Version of Ruby 2.1.8
+	Version of Rails 4.2.6
+	Version of Gem 2.6.3
 	
-	Não sabe instalar ?
-	Link de um bom video para ajudar:
-	https://www.youtube.com/watch?v=SPM9nwUQqZ0 (Versões antigas mas é passo a passo processo de instalação)
+	You do not know how to install?
+	this video will help you:
+	https://www.youtube.com/watch?v=SPM9nwUQqZ0 (Older versions but step by step installation process)
 
-3) Abra no Windows o prompt de comando (Digitando "cmd" no buscador do windows) 
-   de preferencia como admin (depois de pesquisar basta clicar com botão direito e clicar em executar como administrador).
+3) Open the Windows command prompt (typing "cmd" in the windows browser)
+    preferably as admin (after searching just right click and click Run as administrator).
 
-4) No prompt de comando vá entrando nas pastas até entrar na pasta do seu projeto.<br>
-	No prompt de comando(cmd):
-	Para entrar em pastas basta digitar:  
+4) At the command prompt go entering the folder to go into your project folder. <br>
+	At the command prompt (cmd):
+	To enter into folders just type:
 	
-	cd nome_da_sua_pasta
+	cd name_of_your_folder
 	
-	Para sair e subir para a pasta de fora basta digitar: 
+	To get out and climb to the folder out just type:
 	
 	cd..
 
-	<< (Dica) >> 
-	<< Voce pode ir diretamente na pasta e clicar com botão direito do mouse segurando shift e clicar em abrir janela de comando aqui >>
+	<< (Tip) >> 
+	<< You can go directly to the folder and right click the mouse holding shift and click Open command window here >>
 	
-5) Quando chegar dentro da pasta raiz do projeto cujo nome é TesteAppRD_IvanAmorim digite comando abaixo:
+5) When you arrive in the project root folder whose name is TesteAppRD_IvanAmorim type following command:
 	
 	rails s   
 	
-	Assim irá rodar o servidor do rails na sua maquina
+	So will run rails server on your machine
 	
-6)  Com o servidor local rodando na sua maquina basta digitar na url do seu navegador:
+6)  With the local server running on your machine simply type in the URL of your browser:
 
 	http://localhost:3000/
 
-7) Tela Principal:
+7) Main screen:
 
-	O programa irá abrir uma tela inicial com o Menu:
+	The program will open a home screen with the menu:
 	
 	Inicio | Lista de Usuarios RD | Cadastrar Novo Usuário RD | Logar
 
-	Inicio: Volta para esta tela de inicio.
+	Inicio: Back to this start screen.
 	
-	Lista de Usuarios RD: Lista os usuariosRD cadastrados podendo ver todos cadastrados, podendo editar, deletar.
+	Lista de Usuarios RD: List registered users can see all registered and can edit, delete.
 
-	Cadastrar Novo Usuário RD: Cadastra um novo usuarioRD.
+	Cadastrar Novo Usuário RD: Register a new user.
 	
-	Logar: Loga no sistema, se o seu usuarioRD já estiver cadastrado.
+	Logar: Logs in, if your user is already registered.
 	
-8) Tela de Principal (Logado):
+8) Main screen (Logged):
 
-	O programa irá abrir em uma tela inicial com o Menu:
+	The program will open in an initial screen with the menu:
 	
 	Inicio | Lista de Usuarios RD | Clientes de amorim-ivan@hotmail.com | Cadastrar Novo Usuário RD | amorim-ivan@hotmail.com | Sair 
 
-	Inicio: Volta para esta tela de inicio.
+	Inicio: Back to this start screen.
 	
-	Lista de Usuarios RD: Lista os usuariosRD cadastrados podendo ver todos cadastrados, podendo editar, deletar.
+	Lista de Usuarios RD: List registered users can see all registered and can edit, delete.
 	
-	Clientes de amorim-ivan@hotmail.com: Lista todos os clientes cadastrados do usuário logado podendo ver todos, editar, deletar.
+	Clientes de amorim-ivan@hotmail.com: List all registered customers of the logged in user can see all, edit, delete.
 	
-	Cadastrar Novo Usuário RD: Cadastra um novo usuarioRD.
+	Cadastrar Novo Usuário RD: Register a new user.
 	
-	amorim-ivan@hotmail.com: Ao clicar em cima do email do usuário cadastrado mostra-se todos os dados dele.
+	amorim-ivan@hotmail.com: By clicking on the user's registered email shows up all data from it.
 	
-	Sair: Sai da área do usuário no sistema e volta para para a página principal.
+	Sair: Get out of the user area in the system and back to the main page.
 	
 
-9) Tela de Login/cadastro:
+9) Screen Login / Register:
 
-	O programa irá abrir em uma tela com dois EditText e um botão:
+	The program will open a screen with two EditText and a button:
 
-	EditText-1) Colocar o email do usuário, caso já tenha no banco ele emite um alerta email já existente.
+	EditText-1) Put the user email, if you already have in the bank it emits an existing email alert.
 	
-	EditText-2) Colocar a senha do usuário, salva criptografado no banco de dados.
+	EditText-2) Place the user's password, saved encrypted in the database.
 
-	Button-1) Clicando no Botão registrar, salva o usuário no banco e já loga.
+	Button-1) Clicking the record button, the user saves on the bench and have logs.
 	
 	
-10) Telas de Exibição dos dados
+10) Display screens of data
 
-	Ao clicar nos botões "show" irá aparecer os dados do usuário selecionado assim como:
+	By clicking the button "show" will show the selected user data as well as:
 
-	Nome e Email
+	Name and Email
 	
-11) Telas de Cadastro:
+11) Registration screens:
 
-	Aparecerá 3 EditText e um botão:
+	3 appears EditText and a button:
 	
-	EditText-1) Colocar o nome do usuário que será cadastrado.
+	EditText-1) Put the user name to be registered.
 	
-	EditText-2) Colocar o email do usuário que será cadastrado.
+	EditText-2) Put the user email to be registered.
 
-	EditText-3) Colocar senha / se for na area de cliente será telefone.
+	EditText-3) Enter password / if the client area without phone.
 	
-	Button-2) Clicando no Botao Register ele irá salvar os dados preenchidos e também ira criar um id no banco.
+	Button-2) By clicking on the Register it will save the completed data and also will create an id on the bench.
 	
-12) Validações e MSGs:
+12) Validations and MSGs:
 	
-	Validação/MSGs-1) Ao entrar com usuário ou senha errados ou nao cadastrados no banco aparecerá a seguinte mensagem ("Invalid email or password.!").
+	Validation/MSGs-1) When entering user or wrong password or not registered in the bank the following message appears ("Invalid email or password.!").
 	
-	Validação/MSGs-3) Ao clicar em register em uma tela de cadastro e se for salvo com sucesso aparecerá a seguinte mensagem ("Usuário criado com sucesso!!").
+	Validation/MSGs-3) By clicking Register in a registration screen and is saved successfully the following message appears ("Usuário criado com sucesso!!").
 
-	Validação/MSGs-4) Ao clicar em editar em uma tela de cadastro e se for salvo com sucesso aparecerá a seguinte mensagem ("Usuário atualizado com sucesso!!").
+	Validation/MSGs-4) By clicking edit in a registration screen and is saved successfully the following message appears ("Usuário atualizado com sucesso!!").
 
-	Validação/MSGs-5) Ao clicar em deletar em uma tela de cadastro e se for salvo com sucesso aparecerá a seguinte mensagem ("Usuário excluido com sucesso!!").	
+	Validation/MSGs-5) When you click delete on a registration screen and is saved successfully the following message appears ("Usuário excluido com sucesso!!").	
 .
 
