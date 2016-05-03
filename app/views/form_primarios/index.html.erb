@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Formulário Matriz - Personalização</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nomecampo</th>
+      <th>Tipocampo</th>
+      <th>Itenscombo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @form_primarios.each do |form_primario| %>
+
+	  <tr>
+        <td><label><%= form_primario.nomeCampo %></label></td>
+		<% if(form_primario.tipoCampo == 'text') %>
+			<td> <input name="<%= form_primario.nomeCampo %>" type="<%= form_primario.tipoCampo %>" disabled value="<%= form_primario.tipoCampo %>" /></td>
+			<td></td>
+		<% else %>
+			<% if(form_primario.tipoCampo == 'combobox') %>
+				<td>
+					<select name="<%= form_primario.nomeCampo %>" Enabled="false">
+						<option value="<%= form_primario.tipoCampo %>"><%= form_primario.tipoCampo %></option>
+					</select>
+				</td>
+				<td><%= form_primario.itensCombo%></td>
+			<%else%>
+				<td><textarea rows="2" cols="20" name="<%= form_primario.nomeCampo %>" disabled > Textarea...</textarea></td>
+				<td></td>
+			<%end%>
+		<% end %>
+        <td><%= link_to 'Exibir', form_primario %></td>
+        <td><%= link_to 'Editar', edit_form_primario_path(form_primario) %></td>
+        <td><%= link_to 'Deletar', form_primario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+	  
+	
+	 
+	  </td>
+	  
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Form primario', new_form_primario_path %>

@@ -1,3 +1,5 @@
 class Cliente < ActiveRecord::Base
-  belongs_to :usuario
+
+  attr_accessible :emailUsuario, :nome, :email, :telefone
+   
 end

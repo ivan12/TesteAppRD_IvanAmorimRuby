@@ -16,7 +16,12 @@
 
 	<%= link_to 'Clientes de '+current_usuario.email, clientes_path %>
 	
+	<%= link_to 'Formulario De Costumização', form_primarios_path %>
+	
+	<%= link_to 'Clientes Campos Extras', campos_extras_path %>
+	
 	<%= link_to current_usuario.email, edit_usuario_registration_path %>
+	
 	
 	<%= link_to 'Sair', destroy_usuario_session_path, method: :delete %>
 

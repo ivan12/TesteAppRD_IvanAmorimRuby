@@ -1,0 +1,29 @@
+<%= form_for(@form_primario) do |f| %>
+  <% if @form_primario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@form_primario.errors.count, "error") %> prohibited this form_primario from being saved:</h2>
+
+      <ul>
+      <% @form_primario.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nomeCampo %><br>
+    <%= f.text_field :nomeCampo %>
+  </div>
+  <div class="field">
+    <%= f.label :tipoCampo %><br>
+    <%= f.text_field :tipoCampo %> Somente: text, textarea ou combobox
+  </div>
+  <div class="field">
+    <%= f.label :itensCombo %><br>
+    <%= f.text_field :itensCombo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Emailusuario:</strong>
+  <%= @form_primario.emailUsuario %>
+</p>
+
+<p>
+  <strong>Nomecampo:</strong>
+  <%= @form_primario.nomeCampo %>
+</p>
+
+<p>
+  <strong>Tipocampo:</strong>
+  <%= @form_primario.tipoCampo %>
+</p>
+
+<p>
+  <strong>Itenscombo:</strong>
+  <%= @form_primario.itensCombo %>
+</p>
+
+<%= link_to 'Edit', edit_form_primario_path(@form_primario) %> |
+<%= link_to 'Back', form_primarios_path %>

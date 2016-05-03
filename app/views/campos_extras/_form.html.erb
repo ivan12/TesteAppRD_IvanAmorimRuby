@@ -1,0 +1,44 @@
+<%if @campos_extra != nil%>
+	<%= form_for(@campos_extra) do |f| %>
+		  <% if @campos_extra.errors.any? %>
+				<div id="error_explanation">
+				  <h2><%= pluralize(@campos_extra.errors.count, "error") %> prohibited this campos_extra from being saved:</h2>
+
+				  <ul>
+				  <% @campos_extra.errors.full_messages.each do |message| %>
+					<li><%= message %></li>
+				  <% end %>
+				  </ul>
+				</div>
+		  <% end %>
+
+		  <div class="field">
+			<%= f.label :emailCliente %><br>
+			<%= f.text_field :emailCliente %>
+		  </div>
+		  <div class="field">
+			<%= f.label :nomeCampo %><br>
+			<%= f.text_field :nomeCampo %>
+		  </div>
+		  <div class="field">
+			<%= f.label :tipoCampo %><br>
+			<%= f.text_field :tipoCampo %>
+		  </div>
+		  <div class="field">
+			<%= f.label :valorCampo %><br>
+			<%= f.text_field :valorCampo %>
+		  </div>
+		  <div class="field">
+			<%= f.label :itensCombox %><br>
+			<%= f.text_field :itensCombox %>
+		  </div>
+		  <div class="field">
+			<%= f.label :itemselCombobox %><br>
+			<%= f.text_field :itemselCombobox %>
+		  </div>
+		  <div class="actions">
+			<%= f.submit %>
+		  </div>
+	<% end %>
+<% end %>
+

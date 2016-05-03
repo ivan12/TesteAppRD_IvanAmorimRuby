@@ -1,13 +1,16 @@
 class ClientesController < ApplicationController
   before_action :set_cliente, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_usuario!
+  before_action :carregaCamposExtras
 
+  def carregaCamposExtras
+	@campos_extras = CamposExtra.all
+  end
   # GET /clientes
   # GET /clientes.json
   def index
     #@clientes = Cliente.find_by_emailUsuario(current_usuario.email)
 	@clientes = Cliente.where('emailUsuario = ?', current_usuario.email)
-	
   end
 
   # GET /clientes/1
@@ -68,8 +71,8 @@ class ClientesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_cliente
-      @cliente = Cliente.find(params[:id])
-    end
+	  @cliente = Cliente.find(params[:id])
+	end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cliente_params

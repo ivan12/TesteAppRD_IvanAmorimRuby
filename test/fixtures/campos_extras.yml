@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  emailCliente: MyString
+  nomeCampo: MyString
+  tipoCampo: MyString
+  valorCampo: MyString
+  itensCombox: MyString
+  itemselCombobox: MyString
+
+two:
+  emailCliente: MyString
+  nomeCampo: MyString
+  tipoCampo: MyString
+  valorCampo: MyString
+  itensCombox: MyString
+  itemselCombobox: MyString

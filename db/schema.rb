@@ -11,13 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160428171408) do
+ActiveRecord::Schema.define(version: 20160502223624) do
+
+  create_table "campos_extras", force: :cascade do |t|
+    t.string   "emailCliente"
+    t.string   "nomeCampo"
+    t.string   "tipoCampo"
+    t.string   "valorCampo"
+    t.string   "itensCombox"
+    t.string   "itemselCombobox"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
 
   create_table "clientes", force: :cascade do |t|
     t.text     "emailUsuario"
     t.text     "nome"
     t.text     "email"
     t.text     "telefone"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
+
+  create_table "form_primarios", force: :cascade do |t|
+    t.string   "emailUsuario"
+    t.string   "nomeCampo"
+    t.string   "tipoCampo"
+    t.string   "itensCombo"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  emailUsuario: MyString
+  nomeCampo: MyString
+  tipoCampo: MyString
+  itensCombo: MyString
+
+two:
+  emailUsuario: MyString
+  nomeCampo: MyString
+  tipoCampo: MyString
+  itensCombo: MyString

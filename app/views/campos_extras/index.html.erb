@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Clientes Campos Extras</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Emailcliente</th>
+      <th>Nomecampo</th>
+      <th>Tipocampo</th>
+      <th>Valorcampo</th>
+      <th>Itenscombox</th>
+      <th>Itemselcombobox</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @campos_extras.each do |campos_extra| %>
+      <tr>
+        <td><%= campos_extra.emailCliente %></td>
+        <td><%= campos_extra.nomeCampo %></td>
+        <td><%= campos_extra.tipoCampo %></td>
+        <td><%= campos_extra.valorCampo %></td>
+        <td><%= campos_extra.itensCombox %></td>
+        <td><%= campos_extra.itemselCombobox %></td>
+        <td><%= link_to 'Show', campos_extra %></td>
+        <td><%= link_to 'Edit', edit_campos_extra_path(campos_extra) %></td>
+        <td><%= link_to 'Destroy', campos_extra, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Campos extra', new_campos_extra_path %>
